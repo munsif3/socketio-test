@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>SOCKET.IO TEST</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <script src="/socket.io/socket.io.js"></script>
+
+      <script>
+            const socket = io();
+
+            socket.on('message', (data) => {
+                  document.write(data);
+            });
+      </script>
+
+</head>
+
+<body>
+      Hello from Socket
+</body>
+
+</html>
